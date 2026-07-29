@@ -1,0 +1,38 @@
+name: daily-ops
+# Eyes for magicfire.ro. Public repo => free unlimited Actions minutes.
+# Pulls Search Console + checks the live site. No PC required.
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  ops:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: pip install --quiet cryptography
+      - name: Pull Search Console
+        env:
+          GSC_KEY_JSON: ${{ secrets.GSC_KEY_JSON }}
+          GSC_SITE: https://magicfire.ro/
+          GSC_OUT: data/gsc.json
+        run: python scripts/gsc.py || echo "GSC step failed (non-fatal)"
+      - name: Live-site health (mobile-first)
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm install --no-save playwright@1.49.0
+          npx playwright install --with-deps chromium
+          node scripts/site.cjs || echo "site check failed (non-fatal)"
+      - name: Commit
+        run: |
+          git config user.name "magicfire-ops-bot"
+          git config user.email "ops@magicfire.ro"
+          git add data/ || true
+          git diff --staged --quiet || git commit -m "data: ops snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push || echo "nothing to push"
