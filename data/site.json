@@ -1,0 +1,68 @@
+{
+  "generated_utc": "2026-07-29T14:37:40.903Z",
+  "passed": 10,
+  "total": 12,
+  "all_green": false,
+  "checks": [
+    {
+      "name": "homepage loads",
+      "ok": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "phone link (tel:) exists",
+      "ok": true,
+      "detail": "7 found tel:+40746883228"
+    },
+    {
+      "name": "phone visible above the fold (mobile)",
+      "ok": true,
+      "detail": "yes"
+    },
+    {
+      "name": "a form exists on homepage",
+      "ok": true,
+      "detail": "1 form(s)"
+    },
+    {
+      "name": "no horizontal overflow (390px)",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "name": "no JS errors",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "name": "title present",
+      "ok": true,
+      "detail": "Spectacole de Artificii în Iași și Moldova | MagicFire"
+    },
+    {
+      "name": "meta description present",
+      "ok": true,
+      "detail": "160 chars"
+    },
+    {
+      "name": "page /contact",
+      "ok": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "name": "page /servicii",
+      "ok": false,
+      "detail": "HTTP 404"
+    },
+    {
+      "name": "page /despre-noi",
+      "ok": false,
+      "detail": "HTTP 404"
+    },
+    {
+      "name": "page /blog",
+      "ok": true,
+      "detail": "HTTP 200"
+    }
+  ]
+}
