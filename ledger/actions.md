@@ -52,3 +52,57 @@ Notes on the copy: no safety/authorization claims (§1 — pyrotechnics is regul
 - No prior actions existed to score this cycle (first real KPI pull — `ledger/KPIS.md` was empty coming in).
 
 **Needs the owner:** apply Action #1 in wp-admin (WordPress write access not yet wired to this routine); confirm whether `/artificii-galati/` targeting Galați is intentional; confirm `/servicii` and `/despre-noi` URL expectations.
+
+---
+
+## 2026-08-03 (Monday) — Action #2: title/meta rewrite on the pricing page
+
+**Status:** PROPOSED (not applied — WordPress write access still not wired; this is the implementation-ready spec for the owner/desktop to apply).
+
+**Page:** `https://magicfire.ro/preturi/`
+
+**Evidence (`data/gsc.json`, 28d, generated 2026-08-02):**
+- Page-level aggregate: position 5.7, **120 impressions, only 1 click (0.83% CTR)**.
+- This is the largest CTR gap in the entire `pages_28d` dataset this cycle: it has the 4th-highest impression count (behind only the homepage, `/artificii-galati/`, and `/artificii-nunta-pret-2026-romania/`) but by far the worst conversion of impressions into clicks — every other page above 40 impressions converts at 3-10% CTR.
+- Position 5.7 sits squarely in the "position 4-15, on-page fix could reach top 3" bracket CLAUDE.md STEP 2(a) prioritises — the page is already being shown, it just isn't being clicked.
+- A pricing page is inherently high buyer-intent: someone searching pricing terms is closer to calling/messaging than someone searching a generic informational term. Per the mission (local visibility → site visit → call/WhatsApp/form), this is one of the highest-leverage pages on the whole site to fix, because the traffic is already there — the only failure is the snippet not earning the click.
+- `query_page_28d` does not break out individual queries landing on `/preturi/` at the row-count threshold GSC exports at this volume, so the specific search terms behind these 120 impressions aren't visible — the page-level aggregate is still strong enough evidence to act on (STEP 2 does not require query-level granularity, and the CTR gap is unambiguous regardless of which exact queries make it up).
+
+**Current title/meta:** **NOT VERIFIED THIS SESSION.** Same network restriction as Action #1 — this session's outbound policy blocks direct HTTPS access to magicfire.ro (WebFetch returned HTTP 403 on `/preturi/`). **Do not paste the proposed text over the live page blind — open the page (or its Yoast/RankMath fields in wp-admin) first and confirm what's actually there**, in case the low CTR is caused by something other than the title/meta (e.g. a misleading snippet, a rich-result eating the click, or the page ranking for a mismatched query) — if so, hold this change and re-diagnose rather than applying text that doesn't address the real cause.
+
+**Proposed title tag** (56 chars):
+`Prețuri Artificii și Foc de Artificii Iași | MagicFire`
+
+**Proposed meta description** (152 chars):
+`Prețuri artificii pentru nunți, botezuri și evenimente în Iași. Pachete pe măsura bugetului tău. Cerere ofertă rapidă: 0746 883 228.`
+
+Notes on the copy: no fabricated numbers, no authorization/safety claims (§1, §7 — pricing pages don't need them and shouldn't invent them), phone number matches the verified live `tel:` link in `data/site.json`. Adds "Iași" for local anchoring, names the two biggest non-NYE occasions (nunți, botezuri) that drive this business per CLAUDE.md, and leads with "Prețuri" since that's the exact intent signal a pricing-page searcher is scanning results for.
+
+**Why this one, not something else:** the `/artificii-nunta` cannibalization question (deferred both 2026-07-30 and again this cycle — no new signal since last pull to justify the internal-linking review effort) and `/artificii-galati/` scope question remain open for the owner but neither has fresh evidence this cycle. `/category/artificii-iasi-evenimente/` also has a real CTR gap (97 impr, 3 clicks, 3.1% CTR, pos 7.0) but it's a category archive page, not a single page with one title/meta to fix — lower-leverage edit for the same effort. `/preturi/` is the single clearest, cleanest, lowest-effort, highest-buyer-intent gap this cycle.
+
+**Expected effect:** if the CTR problem is genuinely the snippet (not yet confirmed — see caveat above), moving from 0.83% toward even a modest 4-6% CTR at 120 impressions/28d would add roughly 4-6 clicks/28d — the single biggest realistic click gain of any opportunity in this pull, several times the size of Action #1's expected effect.
+
+**Verify date:** 2026-09-14 (~6 weeks out — one full cycle later than Action #1's 4-week window, since this page's current snippet hasn't been seen yet and the owner may need an extra cycle to both confirm current text and apply the change). On that date: re-pull `data/gsc.json`, compare `/preturi/` clicks/CTR/position against the 2026-08-02 baseline above (120 impr / 1 click / 0.83% CTR / pos 5.7), score Win/Loss/Inconclusive.
+
+**Seasonal read (STEP 2d):** Today, 2026-08-03, is inside the tail of wedding season (May-Sep, closing in ~8 weeks) and well before the Dec 31 spike's 6-10-week lead-in window (starts ~Oct 22). A pricing page is evergreen and serves both weddings now and the NYE spike later without needing separate seasonal copy, so there's no timing conflict — but it does mean this fix should land soon to still catch tail-end wedding pricing searches this season, not slip past September.
+
+**Needs the owner:** applying this change (WordPress access not wired to this routine yet); confirming current on-page title/meta on `/preturi/` before overwriting it, per above; and — unchanged from 2026-07-30 — confirming `/artificii-galati/` scope and `/servicii`/`/despre-noi` URL expectations.
+
+---
+
+### Cycle report — 2026-08-03
+
+**What the numbers say:** Clicks +80.5% and impressions +69.7% over the trailing 28d vs. the prior 28d (139 vs 77 clicks, 1,746 vs 1,029 impressions), average position improved from 5.71 to 5.01, and this time CTR moved up slightly too (7.48%→7.96%) rather than dipping — the growth trend from the last pull is holding and broadening, not just an impression spike diluting engagement. Mobile remains 85% of impressions at a slightly better position than desktop (4.8 vs 6.4), confirming mobile-first is still the right lens.
+
+**Recommended action:** rewrite title + meta on `/preturi/` (Action #2 above) — the clearest, best-evidenced, single highest-value move this cycle: a high buyer-intent page ranking respectably (pos 5.7) but converting almost none of its 120 impressions into clicks.
+
+**Action #1 scoring:** not due — verify date is 2026-08-27. Logged a status check in `ledger/KPIS.md`: no meaningful movement yet on `/artificii-reci-fantani-scantei-t1/` (29 impr / 2 clicks / pos 7.7, unchanged from baseline), which is expected this early.
+
+**Rejected/deferred this cycle** (full detail in `ledger/opportunities.md`):
+- "artificii nunta" cannibalization across homepage / `/artificii-nunta-pret-2026-romania/` / `/artificii-nunta-iasi-ghid-locatii-tendinte-2026/` — still open, no fresh evidence this cycle to justify prioritizing the internal-linking review over the cleaner `/preturi/` fix. Carrying forward, not re-scored.
+- `/category/artificii-iasi-evenimente/` CTR gap (97 impr, 3 clicks, 3.1% CTR, pos 7.0) — real, but a category archive rather than a single editable page/post; lower leverage per unit of effort than `/preturi/` this cycle. Filed as a candidate for a future cycle.
+- `/artificii-galati/` scope question and `/servicii`/`/despre-noi` 404s — unchanged since 2026-07-30, still awaiting owner confirmation, not re-actioned without new evidence.
+- "petarde" 0% CTR — unchanged, still deferred as product/shop intent rather than call-conversion intent.
+- No seasonal-spike-specific action taken: today is before the Dec 31 prep window (starts ~Oct 22) and wedding season is closing, not opening — `/preturi/` was chosen as an evergreen fix that still helps both, per the seasonal read above.
+
+**Needs the owner:** apply Action #2 in wp-admin (and Action #1 if not already applied); confirm current `/preturi/` title/meta before overwriting; confirm `/artificii-galati/` scope and `/servicii`/`/despre-noi` URL expectations (carried forward, unresolved since 2026-07-30).
