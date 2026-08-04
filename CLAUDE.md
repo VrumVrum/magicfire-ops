@@ -46,3 +46,9 @@ Not: traffic for traffic's sake. A visitor from another country is worth ~zero h
 - **Score every change.** Set a verify date, then actually go back and score it Win/Loss with the measured delta.
 - **One bet per cycle.** Publishing volume does not work on a small local site — relevance and local signals do.
 - **Say the honest number.** If something did not move, say it did not move.
+
+## §8 Routine transparency (owner order 2026-08-04)
+Every autonomous run MUST append its complete final report (verbatim closing
+message, not a summary) to `reports/routine-reports.md` (newest first, header
+`## run — <UTC timestamp>`), committed in the same push as its other work.
+Chat-only reporting = FAILED run. Trim entries older than 30 days.
