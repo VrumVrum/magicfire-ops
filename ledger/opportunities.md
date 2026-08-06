@@ -22,3 +22,13 @@ Rejected ones stay here with the reason so they are not re-proposed.
 | `/category/artificii-iasi-evenimente/` CTR gap | pos 7.0, 97 impr/28d, 3 clicks, 3.1% CTR | Moderate | Higher — category archive template/settings, not a single page's title/meta | **DEFERRED** — real gap, filed for a future cycle once `/preturi/` is scored |
 | "artificii nunta" cannibalization (carried forward from 2026-07-30) | Still ranks 9.1 on homepage (10 impr) vs. purpose-built pages ranking narrower variants better; no new evidence this pull | Potentially highest in the dataset | Medium-high — internal-linking review across 3 URLs | **DEFERRED, no new evidence** — carrying forward unscored |
 | `/artificii-galati/`, `/servicii`, `/despre-noi` (carried forward from 2026-07-30) | Unchanged since last pull | N/A | N/A | **STILL FLAGGED FOR OWNER** — no new evidence, not re-actioned |
+
+## 2026-08-06 batch (source: data/gsc.json 28d pull, generated 2026-08-05; data/site.json)
+
+| Opportunity | Evidence | Expected local calls | Effort | Status |
+|---|---|---|---|---|
+| Title/meta rewrite, `/category/artificii-iasi-evenimente/` (category archive) | pos 6.9, 92 impr/28d, 2 clicks, 2.17% CTR — flat/worse vs. 2026-08-03; "artificii iasi" ranks pos 12.1 on this page vs. pos 2.9 on the homepage (cannibalization) | Moderate (+3-5 clicks/28d est.) plus reduced internal competition on the site's top query | Very low (1 taxonomy SEO field) | **ACTIONED** — see actions.md #3, verify 2026-09-21 |
+| Second title/meta pass on `/preturi/` | CTR fell from 0.83% (1 click) to 0% (0 clicks) on 107 impr, pos held at 5.7 | N/A this cycle | N/A | **NOT ACTIONED** — Action #2 already targets this page and isn't due (2026-09-14); one bet per cycle, tracking the worsened number instead of re-proposing |
+| "artificii nunta" cannibalization (carried forward, 3rd cycle) | Homepage still ~12 impr at pos ~9-10 for the core term; no fresh evidence | Potentially highest in the dataset | Medium-high — internal-linking review across 3 URLs | **DEFERRED, no new evidence** — carrying forward unscored |
+| `/artificii-galati/`, `/servicii`, `/despre-noi` (carried forward, 3rd cycle) | Unchanged since 2026-07-30 | N/A | N/A | **STILL FLAGGED FOR OWNER** — no new evidence, not re-actioned |
+| "petarde" 0% CTR (carried forward) | pos 5.6, 33 impr, still 0 clicks | Uncertain — shop/self-serve intent, not call conversion | Low | **DEFERRED** — unchanged reasoning since 2026-07-30 |

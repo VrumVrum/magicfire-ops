@@ -106,3 +106,58 @@ Notes on the copy: no fabricated numbers, no authorization/safety claims (§1, �
 - No seasonal-spike-specific action taken: today is before the Dec 31 prep window (starts ~Oct 22) and wedding season is closing, not opening — `/preturi/` was chosen as an evergreen fix that still helps both, per the seasonal read above.
 
 **Needs the owner:** apply Action #2 in wp-admin (and Action #1 if not already applied); confirm current `/preturi/` title/meta before overwriting; confirm `/artificii-galati/` scope and `/servicii`/`/despre-noi` URL expectations (carried forward, unresolved since 2026-07-30).
+
+---
+
+## 2026-08-06 (Thursday) — Action #3: title/meta rewrite on the events category archive
+
+**Status:** PROPOSED (not applied — WordPress write access still not wired; this is the implementation-ready spec for the owner/desktop to apply).
+
+**Page:** `https://magicfire.ro/category/artificii-iasi-evenimente/` (category archive)
+
+**Evidence (`data/gsc.json`, 28d, generated 2026-08-05):**
+- Page-level aggregate: position 6.9, 92 impressions, 2 clicks, 2.17% CTR — flagged as a candidate in `ledger/opportunities.md` on 2026-08-03 ("filed for a future cycle"); this is that cycle, and the gap has not closed on its own (was 97 impr / 3 clicks / 3.1% CTR / pos 7.0 on 2026-08-03 — flat to slightly worse).
+- Position 6.9 sits in the "position 4-15, on-page fix could reach top 3-5" bracket CLAUDE.md STEP 2(a) prioritises, and a category archive's SEO title/meta is a single Yoast/RankMath field — same very-low-effort shape as Actions #1 and #2.
+- The sharper signal is at query level: `query_page_28d` shows "artificii iasi" — the site's single best-performing query (pos 2.9, 22 clicks on the homepage) — landing on *this* page at **position 12.1** (9 impressions, 0 clicks). The category archive appears to be competing for the exact commercial term the homepage already owns comfortably, and losing by ~9 positions instead of serving a distinct intent. That's wasted relevance, not just a weak snippet.
+- The fix proposed here is not just a copy tweak: it repositions this page's on-page SEO target away from head-on "artificii iasi" competition and toward what a category archive of blog/guide posts actually is — a content/ghid hub — so it stops cannibalizing the homepage's stronger ranking for the money query while still capturing informational searches (nunți, botezuri, evenimente) that funnel toward a call.
+
+**Current title/meta:** **NOT VERIFIED THIS SESSION.** Same network restriction as Actions #1 and #2 — this session's outbound policy blocks direct HTTPS access to magicfire.ro. **Do not paste the proposed text over the live page blind — open the page (or its Yoast/RankMath category SEO fields in wp-admin) first and confirm what's actually there.**
+
+**Proposed title tag** (53 chars):
+`Articole Artificii pentru Evenimente Iași | MagicFire`
+
+**Proposed meta description** (138 chars):
+`Ghiduri și noutăți despre artificii, fum greu și efecte pirotehnice pentru nunți, botezuri și evenimente în Iași. Sună acum: 0746 883 228.`
+
+Notes on the copy: no fabricated data or authorization/safety claims (§1), phone number matches the verified live `tel:` link in `data/site.json`. "Articole"/"Ghiduri" signals this is a content hub (matching what a category archive of blog posts actually is) rather than re-competing with the homepage for "artificii iasi" — deliberately does NOT lead with "Artificii Iași" the way the homepage title does, to reduce cannibalization risk rather than add to it.
+
+**Why this one, not something else:** `/preturi/`'s CTR fell further this pull (1 click → 0 clicks) but Action #2 is already proposed and not yet due (2026-09-14) — proposing a second fix on the same unapplied page would violate "one bet per cycle" without new diagnostic value. "artificii nunta" cannibalization (deferred twice, still no fresh evidence this pull) and `/artificii-galati/` scope (owner-gated, unchanged) remain open but inactionable without new signal. This category page is the one item with both fresh, unambiguous evidence and a clean two-field fix.
+
+**Expected effect:** modest but real — closing even part of the position-12.1-vs-2.9 gap for "artificii iasi" reduces internal competition rather than adding clicks directly; the CTR-focused title/meta change on the page's own 92 impressions, if it lifts CTR from 2.17% toward a more typical 5-8% for this position band, would add roughly 3-5 clicks/28d. Sized as one small reversible bet, consistent with the two prior actions.
+
+**Verify date:** 2026-09-21 (~6.5 weeks out, matching Action #2's cadence since this also depends on the owner both confirming current text and applying the change through an unwired WordPress connection).
+
+**Seasonal read (STEP 2d):** Today, 2026-08-06, is in the tail of wedding season (May-Sep, closing in ~8 weeks) and well before the Dec 31 spike's 6-10-week lead-in window (starts ~Oct 22, i.e. ~11 weeks away). This is filed as an evergreen relevance/cannibalization fix, not a seasonal bet — it should land soon so it has time to settle before the Dec 31 prep window needs the calendar clear for NYE-specific work.
+
+**Needs the owner:** applying this change (WordPress access not wired to this routine yet); confirming current on-page title/meta before overwriting it; and — unchanged and still open — applying Actions #1 and #2, confirming `/artificii-galati/` scope, and confirming `/servicii`/`/despre-noi` URL expectations.
+
+---
+
+### Cycle report — 2026-08-06
+
+**What the numbers say:** Clicks +25.3% and impressions +61.1% over the trailing 28d vs. the prior 28d (114 vs 91 clicks, 1,732 vs 1,075 impressions), average position kept improving (5.67→5.09). This is the first cycle where click growth clearly decelerated relative to impression growth — CTR fell 1.89pp (8.47%→6.58%), a bigger dip than the first cycle's -0.74pp and the opposite of the second cycle's small CTR gain. Saying the honest number: clicks did not accelerate this cycle the way they did the previous two. Most likely cause, consistent with the prior read, is impression growth (broad/international queries) outpacing genuine local demand growth — mobile is still 86% of impressions at a better position than desktop (4.9 vs 6.4), so the core local audience read hasn't changed. Worth re-checking next cycle rather than treating as settled.
+
+**Recommended action:** rewrite title + meta on `/category/artificii-iasi-evenimente/` (Action #3 above) — real, unchanged-or-worsening CTR gap plus a genuine cannibalization signal against the homepage's strongest query, fixable with a two-field edit.
+
+**Action #1 scoring:** not due — verify date 2026-08-27 (21 days out). Status check in `ledger/KPIS.md`: no movement, identical to both prior pulls (29 impr / 2 clicks / pos 7.7), expected this early.
+
+**Action #2 scoring:** not due — verify date 2026-09-14 (~39 days out). Status check in `ledger/KPIS.md`: CTR fell further (1 click → 0 clicks on 107 impressions, position held at 5.7). Not scored — the fix still hasn't been applied — but flagged because the gap it targets is getting worse while it waits.
+
+**Rejected/deferred this cycle** (full detail in `ledger/opportunities.md`):
+- Second fix on `/preturi/` — CTR is now 0%, the worst signal yet, but Action #2 already targets this exact page and isn't due; stacking a second unapplied proposal on the same page breaks "one bet per cycle" without adding diagnostic value. Carrying the worsened number forward instead.
+- "artificii nunta" cannibalization across homepage / `/artificii-nunta-pret-2026-romania/` / `/artificii-nunta-iasi-ghid-locatii-tendinte-2026/` — still open, no fresh evidence this cycle (12 impr on homepage vs ~10-12 in prior pulls). Carrying forward unscored for a third cycle.
+- `/artificii-galati/` scope question and `/servicii`/`/despre-noi` 404s — unchanged since 2026-07-30, still awaiting owner confirmation.
+- "petarde" 0% CTR — unchanged, still deferred as product/shop intent rather than call-conversion intent.
+- No seasonal-spike-specific action taken: today is ~11 weeks before the Dec 31 prep window opens (~Oct 22) and wedding season is closing, not opening. Action #3 is filed as evergreen relevance work that should still land before the NYE prep window needs the calendar.
+
+**Needs the owner:** apply Action #3 in wp-admin (and Actions #1/#2 if not already applied); confirm current `/category/artificii-iasi-evenimente/` title/meta before overwriting; confirm `/artificii-galati/` scope and `/servicii`/`/despre-noi` URL expectations (carried forward, unresolved since 2026-07-30, now three cycles running).
