@@ -161,3 +161,61 @@ Notes on the copy: no fabricated data or authorization/safety claims (§1), phon
 - No seasonal-spike-specific action taken: today is ~11 weeks before the Dec 31 prep window opens (~Oct 22) and wedding season is closing, not opening. Action #3 is filed as evergreen relevance work that should still land before the NYE prep window needs the calendar.
 
 **Needs the owner:** apply Action #3 in wp-admin (and Actions #1/#2 if not already applied); confirm current `/category/artificii-iasi-evenimente/` title/meta before overwriting; confirm `/artificii-galati/` scope and `/servicii`/`/despre-noi` URL expectations (carried forward, unresolved since 2026-07-30, now three cycles running).
+
+---
+
+## 2026-08-10 (Monday) — Action #4: title/meta rewrite on the wedding-pricing page
+
+**Status:** PROPOSED (not applied — WordPress write access still not wired; this is the implementation-ready spec for the owner/desktop to apply).
+
+**Page:** `https://magicfire.ro/artificii-nunta-pret-2026-romania/`
+
+**Evidence (`data/gsc.json`, 28d, generated 2026-08-10):**
+- Page-level aggregate: position 6.3, **311 impressions, 9 clicks, 2.89% CTR**.
+- Four-cycle trend on this exact page (from `ledger/KPIS.md`): 144 impr/4 clicks (07-30) → 148/4 (08-03) → 185/4 (08-06) → **311/9 (08-10)**. Impressions nearly doubled in the last four days alone, and this is the fourth consecutive cycle of growth — a real, sustained signal, not a one-off blip. CTR has stayed low and essentially flat across all four pulls (2.8% → 2.7% → 2.2% → 2.9%), so the growth in impressions has not been matched by proportional growth in clicks.
+- `query_page_28d` shows this page landing on unambiguous high-buyer-intent, price-question queries: "cat costa artificiile la nunta" (12 impr, pos 5.9), "cat costa un foc de artificii la nunta" (11 impr, pos 6.6), "pret artificii nunta" (11 impr, pos 7.4), "foc de artificii nunta pret" (7 impr, pos 8.7), "artificii nunta interior" (10 impr, pos 8.2), plus others — all people actively asking "how much does this cost," the exact mid-funnel intent this page exists to answer. Named queries only account for ~65 of the 311 impressions (GSC's per-row threshold suppresses the long tail at this volume), but the visible sample confirms the traffic is on-topic, not stray/irrelevant.
+- Position 6.3 sits in the "position 4-15, on-page fix could reach top 3" bracket CLAUDE.md STEP 2(a) prioritises, and this is now the single largest buyer-intent impression pool in the entire dataset that has never had a title/meta change proposed (bigger than `/preturi/`'s 103 impr, `/category/artificii-iasi-evenimente/`'s 90 impr, or Action #1's 29 impr).
+- Country split confirms this volume is not foreign dilution: Romania is 88.9% of impressions / 90% of clicks sitewide this pull (see `ledger/KPIS.md`), so the CTR gap here reads as a snippet problem, not an audience-mismatch problem.
+
+**Current title/meta:** **NOT VERIFIED THIS SESSION.** This session's outbound network policy blocks direct HTTPS access to magicfire.ro — WebFetch returned `EGRESS_BLOCKED` on this exact URL. **Do not paste the proposed text over the live page blind — open the page (or its Yoast/RankMath fields in wp-admin) first and confirm what's actually there**, in case the flat 2-3% CTR across four cycles has a different cause than the snippet (e.g. a misleading title already, a rich result, or the URL's own "2026" datedness reading stale by the time this is applied).
+
+**Proposed title tag** (55 chars):
+`Cât Costă Artificii de Nuntă 2026 | Preț MagicFire Iași`
+
+**Proposed meta description** (145 chars):
+`Cât costă artificiile la nuntă în 2026? Prețuri orientative pentru foc de artificii și efecte pirotehnice, Iași și Moldova. Ofertă: 0746 883 228.`
+
+Notes on the copy: no fabricated numbers or price figures (§1 — "prețuri orientative" language deliberately avoids stating a number we have not verified we can substantiate), no authorization/safety claims, phone number matches the verified live `tel:` link in `data/site.json`. Title leads with "Cât Costă" to mirror the exact phrasing of the top queries landing on this page ("cat costa artificiile la nunta", "cat costa un foc de artificii la nunta") — matching searcher phrasing in the visible snippet is the most direct lever for CTR at a fixed position. Keeps "Iași" as the local anchor consistent with Actions #1-#3, even though this page's URL is nationally framed ("romania") — the business itself is Iași-based, and CLAUDE.md's local-relevance principle applies regardless of the page's existing URL structure.
+
+**Why this one, not something else:** `/preturi/` (Action #2, still not due, 0 clicks unchanged) and `/category/artificii-iasi-evenimente/` (Action #3, still not due, ticked up slightly) both remain open but neither has fresh evidence this cycle — this page does, and its evidence (impressions nearly doubling in four days, on a page carrying 3x the buyer-intent volume of any pending action) is the strongest single signal in this pull. "artificii nunta" cannibalization on the *homepage* (still pos 7.9, 14 impr, 0 clicks) remains a separate, deferred, medium-high-effort question — this action targets the dedicated pricing page directly and does not depend on resolving that cannibalization first.
+
+**Expected effect:** potentially the largest of any action proposed so far, but sized cautiously because the impression surge itself is new and unconfirmed to persist. If CTR moves from 2.89% toward a more typical 5-7% for position ~6 on a high-intent query, and the 311-impression volume holds, that's roughly +6-13 clicks/28d. If the volume normalizes back toward the ~150-185 range seen in prior cycles, the same CTR lift would still add roughly +3-7 clicks/28d. Either way this is a bigger realistic gain than Actions #1-#3.
+
+**Verify date:** 2026-09-28 (~7 weeks out — slightly longer than the other actions, to give both the CTR change and the fresh impression-volume trend time to show whether the surge is durable or transient before scoring).
+
+**Seasonal read (STEP 2d):** Today, 2026-08-10, is in the tail of wedding season (May-Sep, closing in ~7 weeks) and ~10 weeks before the Dec 31 spike's 6-10-week lead-in window opens (~Oct 22). This page is wedding-specific, not NYE-specific, so it should land now to still catch the remainder of this year's wedding-pricing searches — and title/meta improvements are evergreen, so they carry forward into next year's wedding season too rather than expiring with "2026" in the URL.
+
+**Needs the owner:** applying this change (WordPress access not wired to this routine yet); confirming current on-page title/meta before overwriting it, per above; and — unchanged and carried forward — applying Actions #1-#3, confirming `/artificii-galati/` scope, and confirming `/servicii`/`/despre-noi` URL expectations.
+
+---
+
+### Cycle report — 2026-08-10
+
+**What the numbers say:** Clicks +25.0% and impressions +58.0% over the trailing 28d vs. the prior 28d (120 vs 96 clicks, 1,836 vs 1,162 impressions). Average position improved only slightly, +0.20 (5.58→5.38) — the smallest gain of the four pulls so far. CTR fell again, -1.72pp (8.26%→6.54%), the second straight cycle of a CTR drop of similar size to the last (-1.89pp on 2026-08-06). Unlike prior cycles, this one cannot be waved off as "foreign/broad query dilution": Romania is 88.9% of impressions and 90% of clicks this pull, essentially unchanged from what a healthy local mix should look like. Saying the honest number: two consecutive CTR declines with a domestic-majority audience is a real pattern worth watching, not noise — if it continues next cycle, that becomes its own investigation rather than a side note.
+
+**Recommended action:** title/meta rewrite on `/artificii-nunta-pret-2026-romania/` (Action #4 above) — the clearest fresh signal this cycle: impressions nearly doubled in four days on the site's single largest pool of high-buyer-intent (wedding pricing) traffic, with CTR flat and low across four consecutive pulls.
+
+**Action #1 scoring:** not due — verify date 2026-08-27 (17 days out). Status check in `ledger/KPIS.md`: no movement, identical to all three prior pulls (29 impr / 2 clicks / pos 7.7).
+
+**Action #2 scoring:** not due — verify date 2026-09-14 (35 days out). Status check in `ledger/KPIS.md`: 103 impr / 0 clicks / pos 5.8, essentially unchanged, still 0 clicks for a second straight pull.
+
+**Action #3 scoring:** not due — verify date 2026-09-21 (42 days out). Status check in `ledger/KPIS.md`: 90 impr / 3 clicks / 3.33% CTR / pos 6.9, a small uptick from 2.17% but within noise at this volume, not yet a real movement.
+
+**Rejected/deferred this cycle** (full detail in `ledger/opportunities.md`):
+- "artificii nunta" cannibalization on the homepage (pos 7.9, 14 impr, 0 clicks) — still open, still no fresh evidence pointing at a specific fix beyond the internal-linking review already deferred three cycles running. Action #4 addresses the dedicated pricing page directly without requiring this broader question to be resolved first.
+- `/artificii-galati/` scope question and `/servicii`/`/despre-noi` 404s — unchanged since 2026-07-30, still awaiting owner confirmation, now four cycles running.
+- "petarde" — not re-checked this cycle (not in the top-15 query list this pull); no new evidence either way, still deferred as product/shop intent rather than call-conversion intent per the original reasoning.
+- The CTR-decline pattern flagged above is not itself an action — there's no single page/query fix that explains it yet. Flagging for next cycle rather than guessing at a cause without evidence.
+- No separate seasonal-spike action taken beyond Action #4: today is ~10 weeks before the Dec 31 prep window opens (~Oct 22) and wedding season is closing, not opening. Action #4 is itself the seasonal pick this cycle — it's the wedding-pricing page, timed to catch the remainder of this year's wedding season while the fix carries forward evergreen.
+
+**Needs the owner:** apply Action #4 in wp-admin (and Actions #1-#3 if not already applied); confirm current `/artificii-nunta-pret-2026-romania/` title/meta before overwriting; confirm `/artificii-galati/` scope and `/servicii`/`/despre-noi` URL expectations (carried forward, unresolved since 2026-07-30, now four cycles running).

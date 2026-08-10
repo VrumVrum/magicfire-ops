@@ -103,3 +103,42 @@ Growth continues but the rate is decelerating: clicks growth slowed from +80.5% 
 **Site health (`data/site.json`, generated 2026-08-05):** 10/12 checks green, unchanged. `/servicii` and `/despre-noi` still 404 — same stale flag as prior two pulls, no new evidence, not re-escalated without new information.
 
 Note: this session's outbound network policy still blocks direct fetches to magicfire.ro. No live-page verification was possible from this session — flagged in `ledger/actions.md`.
+
+## 2026-08-10 — fourth scored pull (28d vs prior 28d)
+
+Source: `data/gsc.json`, generated 2026-08-10.
+
+| Metric | Last 28d | Prior 28d | Δ |
+|---|---|---|---|
+| Clicks | 120 | 96 | **+24 (+25.0%)** |
+| Impressions | 1,836 | 1,162 | **+674 (+58.0%)** |
+| CTR | 6.54% | 8.26% | **-1.72pp** |
+| Avg. position | 5.38 | 5.58 | **+0.20 (better)** |
+
+Growth continues but position improvement is the smallest of the four pulls so far (+0.20 vs +0.58 to +0.70 previously), and CTR is down again, similar magnitude to the 2026-08-06 dip (-1.72pp vs -1.89pp). Clicks growth (+25.0%) roughly matches the 2026-08-06 cycle (+25.3%) rather than reaccelerating — the deceleration flagged last cycle has not reversed, it has stabilized at a lower growth rate. Impressions keep climbing fast. Romania is still 88.9% of impressions / 90% of clicks (1,633/1,836 impr, 108/120 clicks) — the impression growth is not primarily foreign traffic this pull, which weakens the "broad/international dilution" explanation used in prior cycles for the CTR dip. Saying the honest number: CTR is down for the second cycle in a row and the cause is less clear than previously assumed — worth a harder look if it continues next cycle.
+
+**Device split (28d):** Mobile 108 clicks / 1,570 impr (85.5% of impressions, CTR 6.88%, pos 5.0), Desktop 12/264 (CTR 4.55%, pos 7.5), Tablet 0/2 (pos 4.0). Mobile-first remains the correct lens; desktop position and CTR both worsened this pull.
+
+**Top queries by clicks (28d):**
+| Query | Clicks | Impr | Position |
+|---|---|---|---|
+| artificii iasi | 19 | 107 | 2.9 |
+| magicfire (brand) | 4 | 7 | 1.0 |
+| artificii | 3 | 35 | 4.6 |
+| artificii galati | 3 | 30 | 7.1 |
+| artificii reci | 2 | 23 | 7.6 |
+| cat costa artificiile la nunta | 2 | 12 | 5.9 |
+
+**Top pages by clicks (28d):** homepage 90/1,128 (pos 4.7) · `/artificii-galati/` 10/130 (pos 6.1) · `/artificii-nunta-pret-2026-romania/` 9/311 (pos 6.3) · `/shop/` 4/65 (pos 7.1) · `/category/artificii-iasi-evenimente/` 3/90 (pos 6.9) · `/artificii-iasi/` 2/95 (pos 4.8) · `/artificii-reci-fantani-scantei-t1/` 2/29 (pos 7.7).
+
+**New signal this pull — `/artificii-nunta-pret-2026-romania/` (the wedding-pricing page):** impressions jumped from 185 (2026-08-06) to **311** — a genuine, sharp rise, not a rounding blip, and the fourth straight cycle of growth on this exact page (144 → 148 → 185 → 311). Clicks more than doubled too (4 → 9), but CTR has stayed flat and low across all four pulls (2.8% → 2.7% → 2.2% → 2.9%) — for a page ranking ~6th on high buyer-intent queries ("cat costa artificiile la nunta", "pret artificii nunta", "cat costa un foc de artificii la nunta", "foc de artificii nunta pret" — all visible in `query_page_28d`), a CTR this low across four consecutive pulls suggests the snippet itself, not the ranking, is the bottleneck. This is now the single largest buyer-intent impression pool in the dataset on a page that has never had a title/meta change proposed. See Action #4 in `ledger/actions.md`.
+
+**Action #1 status check** (`/artificii-reci-fantani-scantei-t1/`, verify date 2026-08-27 — not due, 17 days out): page-level aggregate is 29 impressions / 2 clicks / position 7.7 — identical to all three prior pulls. Still no movement, as expected before the fix is applied.
+
+**Action #2 status check** (`/preturi/`, verify date 2026-09-14 — not due, 35 days out): 103 impressions / 0 clicks / 0% CTR / position 5.8 — essentially unchanged from 2026-08-06 (107 impr / 0 clicks / pos 5.7). Still 0 clicks across two consecutive pulls now.
+
+**Action #3 status check** (`/category/artificii-iasi-evenimente/`, verify date 2026-09-21 — not due, 42 days out): 90 impressions / 3 clicks / 3.33% CTR / position 6.9 — a small tick up from 2026-08-06 (92 impr / 2 clicks / 2.17% / pos 6.9), but within cycle-to-cycle noise at this volume, not a real movement yet. The cannibalization signal is unchanged: "artificii iasi" on this page still sits at position 12.1 (9 impressions, 0 clicks) vs. 2.9 on the homepage.
+
+**Site health (`data/site.json`, generated 2026-08-10):** 10/12 checks green, unchanged. `/servicii` and `/despre-noi` still 404 — same stale flag, no new evidence, not re-escalated.
+
+Note: this session's outbound network policy still blocks direct fetches to magicfire.ro (WebFetch returned `EGRESS_BLOCKED` on both `/artificii-nunta-pret-2026-romania/` and `/preturi/`). No live-page verification was possible from this session — flagged in `ledger/actions.md`.

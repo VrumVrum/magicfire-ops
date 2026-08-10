@@ -32,3 +32,12 @@ Rejected ones stay here with the reason so they are not re-proposed.
 | "artificii nunta" cannibalization (carried forward, 3rd cycle) | Homepage still ~12 impr at pos ~9-10 for the core term; no fresh evidence | Potentially highest in the dataset | Medium-high — internal-linking review across 3 URLs | **DEFERRED, no new evidence** — carrying forward unscored |
 | `/artificii-galati/`, `/servicii`, `/despre-noi` (carried forward, 3rd cycle) | Unchanged since 2026-07-30 | N/A | N/A | **STILL FLAGGED FOR OWNER** — no new evidence, not re-actioned |
 | "petarde" 0% CTR (carried forward) | pos 5.6, 33 impr, still 0 clicks | Uncertain — shop/self-serve intent, not call conversion | Low | **DEFERRED** — unchanged reasoning since 2026-07-30 |
+
+## 2026-08-10 batch (source: data/gsc.json 28d pull, generated 2026-08-10; data/site.json)
+
+| Opportunity | Evidence | Expected local calls | Effort | Status |
+|---|---|---|---|---|
+| Title/meta rewrite, `/artificii-nunta-pret-2026-romania/` (wedding-pricing page) | pos 6.3, impressions doubled in 4 days (185→311, 4th straight cycle of growth), 9 clicks, CTR flat at 2.2-2.9% across 4 pulls; largest buyer-intent impression pool in the dataset, all on price-question queries | High (+3-13 clicks/28d est., range wide because the volume surge is fresh/unconfirmed to persist) | Very low (2 fields) | **ACTIONED** — see actions.md #4, verify 2026-09-28 |
+| "artificii nunta" cannibalization on homepage (carried forward, 4th cycle) | pos 7.9, 14 impr, 0 clicks; no fresh evidence pointing at a specific fix | Potentially high but diffuse across 3 URLs | Medium-high — internal-linking review | **DEFERRED, no new evidence** — carrying forward unscored |
+| `/artificii-galati/`, `/servicii`, `/despre-noi` (carried forward, 4th cycle) | Unchanged since 2026-07-30 | N/A | N/A | **STILL FLAGGED FOR OWNER** — no new evidence, not re-actioned |
+| Two-cycle CTR decline (8.26%→6.54%, -1.72pp) with a domestic-majority audience (89% Romania) | Site-wide, not page-specific — cannot be dismissed as foreign-traffic dilution this time | Unknown — no specific fix identified yet | N/A | **FLAGGED FOR NEXT CYCLE** — watch, do not guess a cause without evidence |
