@@ -1,25 +1,25 @@
 {
   "site": "https://magicfire.ro/",
-  "generated": "2026-08-10",
+  "generated": "2026-08-11",
   "totals_28d": {
-    "clicks": 120,
-    "impressions": 1836,
-    "ctr": 0.06535947712418301,
-    "position": 5.376361655773421
+    "clicks": 121,
+    "impressions": 1911,
+    "ctr": 0.06331763474620618,
+    "position": 5.362637362637362
   },
   "totals_prev_28d": {
     "clicks": 96,
-    "impressions": 1162,
-    "ctr": 0.08261617900172118,
-    "position": 5.580034423407917
+    "impressions": 1193,
+    "ctr": 0.08046940486169321,
+    "position": 5.595976529756915
   },
   "queries_28d": [
     {
       "query": "artificii iasi",
-      "clicks": 19,
-      "impressions": 107,
-      "ctr": 0.1776,
-      "position": 2.9
+      "clicks": 18,
+      "impressions": 106,
+      "ctr": 0.1698,
+      "position": 2.8
     },
     {
       "query": "magicfire",
@@ -31,16 +31,16 @@
     {
       "query": "artificii",
       "clicks": 3,
-      "impressions": 35,
-      "ctr": 0.0857,
+      "impressions": 34,
+      "ctr": 0.0882,
       "position": 4.6
     },
     {
       "query": "artificii galati",
-      "clicks": 3,
-      "impressions": 30,
-      "ctr": 0.1,
-      "position": 7.1
+      "clicks": 2,
+      "impressions": 29,
+      "ctr": 0.069,
+      "position": 6.9
     },
     {
       "query": "artificii reci",
@@ -59,9 +59,9 @@
     {
       "query": "artificii ieftine",
       "clicks": 1,
-      "impressions": 4,
-      "ctr": 0.25,
-      "position": 9.5
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 9.8
     },
     {
       "query": "baterii artificii",
@@ -73,8 +73,8 @@
     {
       "query": "magic fire",
       "clicks": 1,
-      "impressions": 28,
-      "ctr": 0.0357,
+      "impressions": 29,
+      "ctr": 0.0345,
       "position": 1.5
     },
     {
@@ -234,16 +234,16 @@
     {
       "query": "artificii nunta exterior pret",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
       "position": 10.2
     },
     {
       "query": "artificii nunta interior",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 11,
       "ctr": 0,
-      "position": 8.2
+      "position": 8.3
     },
     {
       "query": "artificii nunta pret",
@@ -265,6 +265,13 @@
       "impressions": 1,
       "ctr": 0,
       "position": 1
+    },
+    {
+      "query": "artificii petarde",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
     },
     {
       "query": "artificii petrecere",
@@ -297,9 +304,9 @@
     {
       "query": "artificii shop",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 6,
       "ctr": 0,
-      "position": 3
+      "position": 3.2
     },
     {
       "query": "artificii shop baterii",
@@ -318,9 +325,9 @@
     {
       "query": "artificii sparkulare",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 3,
       "ctr": 0,
-      "position": 8.5
+      "position": 8.3
     },
     {
       "query": "artificii tort",
@@ -360,9 +367,16 @@
     {
       "query": "cat costa un foc de artificii la nunta",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 13,
       "ctr": 0,
-      "position": 6.6
+      "position": 7
+    },
+    {
+      "query": "cheap magic fire 25g",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 31
     },
     {
       "query": "coloured fireworks",
@@ -377,6 +391,13 @@
       "impressions": 1,
       "ctr": 0,
       "position": 2
+    },
+    {
+      "query": "costuri",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "query": "cât costă",
@@ -412,13 +433,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 4
-    },
-    {
-      "query": "fire works",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
     },
     {
       "query": "firecracker",
@@ -479,9 +493,9 @@
     {
       "query": "fireworks",
       "clicks": 0,
-      "impressions": 38,
+      "impressions": 34,
       "ctr": 0,
-      "position": 5.4
+      "position": 5.0
     },
     {
       "query": "fireworks for cakes",
@@ -496,6 +510,13 @@
       "impressions": 1,
       "ctr": 0,
       "position": 2
+    },
+    {
+      "query": "fireworks shop bg3",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13
     },
     {
       "query": "fireworkss",
@@ -528,9 +549,9 @@
     {
       "query": "foc de artificii nunta pret",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 8,
       "ctr": 0,
-      "position": 8.7
+      "position": 8.8
     },
     {
       "query": "focuri de artificii",
@@ -577,9 +598,9 @@
     {
       "query": "fumigene gender reveal",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 6,
       "ctr": 0,
-      "position": 6.3
+      "position": 7.2
     },
     {
       "query": "fumigene iasi",
@@ -640,9 +661,9 @@
     {
       "query": "magazin artificii",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 1
+      "position": 1.5
     },
     {
       "query": "magazin de artificii",
@@ -703,7 +724,7 @@
     {
       "query": "petarde",
       "clicks": 0,
-      "impressions": 39,
+      "impressions": 41,
       "ctr": 0,
       "position": 6.2
     },
@@ -830,58 +851,58 @@
   "pages_28d": [
     {
       "page": "https://magicfire.ro/",
-      "clicks": 90,
-      "impressions": 1128,
-      "ctr": 0.0798,
-      "position": 4.7
-    },
-    {
-      "page": "https://magicfire.ro/artificii-galati/",
-      "clicks": 10,
-      "impressions": 130,
-      "ctr": 0.0769,
-      "position": 6.1
+      "clicks": 91,
+      "impressions": 1139,
+      "ctr": 0.0799,
+      "position": 4.6
     },
     {
       "page": "https://magicfire.ro/artificii-nunta-pret-2026-romania/",
-      "clicks": 9,
-      "impressions": 311,
-      "ctr": 0.0289,
-      "position": 6.3
+      "clicks": 11,
+      "impressions": 361,
+      "ctr": 0.0305,
+      "position": 6.1
+    },
+    {
+      "page": "https://magicfire.ro/artificii-galati/",
+      "clicks": 8,
+      "impressions": 129,
+      "ctr": 0.062,
+      "position": 6.1
     },
     {
       "page": "https://magicfire.ro/shop/",
       "clicks": 4,
-      "impressions": 65,
-      "ctr": 0.0615,
-      "position": 7.1
+      "impressions": 71,
+      "ctr": 0.0563,
+      "position": 8.7
     },
     {
       "page": "https://magicfire.ro/category/artificii-iasi-evenimente/",
       "clicks": 3,
-      "impressions": 90,
-      "ctr": 0.0333,
-      "position": 6.9
+      "impressions": 94,
+      "ctr": 0.0319,
+      "position": 7.0
     },
     {
       "page": "https://magicfire.ro/artificii-iasi/",
       "clicks": 2,
-      "impressions": 95,
-      "ctr": 0.0211,
-      "position": 4.8
+      "impressions": 103,
+      "ctr": 0.0194,
+      "position": 5.1
     },
     {
       "page": "https://magicfire.ro/artificii-reci-fantani-scantei-t1/",
       "clicks": 2,
-      "impressions": 29,
-      "ctr": 0.069,
-      "position": 7.7
+      "impressions": 31,
+      "ctr": 0.0645,
+      "position": 7.4
     },
     {
       "page": "https://magicfire.ro/artificii-nunta-iasi-ghid-locatii-tendinte-2026/",
       "clicks": 1,
-      "impressions": 1,
-      "ctr": 1,
+      "impressions": 3,
+      "ctr": 0.3333,
       "position": 3
     },
     {
@@ -892,11 +913,11 @@
       "position": 6.5
     },
     {
-      "page": "https://magicfire.ro/product-category/articole-pirotehnice/emitatoare-de-sunet-cat-p1/?stock_status=instock&per_row=3&per_page=18&shop_view=grid",
+      "page": "https://magicfire.ro/product-category/engros/",
       "clicks": 1,
-      "impressions": 5,
-      "ctr": 0.2,
-      "position": 8
+      "impressions": 17,
+      "ctr": 0.0588,
+      "position": 12.1
     },
     {
       "page": "https://magicfire.ro/artificii-botez-2026-ghid/",
@@ -950,9 +971,9 @@
     {
       "page": "https://magicfire.ro/diferenta-categorii-f2-f3-t1-artificii/",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 4.5
+      "position": 4.3
     },
     {
       "page": "https://magicfire.ro/efecte-speciale-interior-iasi-fum-greu-scantei/",
@@ -971,9 +992,9 @@
     {
       "page": "https://magicfire.ro/pirotehnician-autorizat-romania/",
       "clicks": 0,
-      "impressions": 31,
+      "impressions": 36,
       "ctr": 0,
-      "position": 7.1
+      "position": 6.5
     },
     {
       "page": "https://magicfire.ro/politica-de-confidentialitate/",
@@ -985,16 +1006,16 @@
     {
       "page": "https://magicfire.ro/preturi/",
       "clicks": 0,
-      "impressions": 103,
+      "impressions": 104,
       "ctr": 0,
-      "position": 5.8
+      "position": 6.0
     },
     {
-      "page": "https://magicfire.ro/product-category/engros/",
+      "page": "https://magicfire.ro/product-category/articole-pirotehnice/emitatoare-de-sunet-cat-p1/?stock_status=instock&per_row=3&per_page=18&shop_view=grid",
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 1,
       "ctr": 0,
-      "position": 12.8
+      "position": 10
     },
     {
       "page": "https://magicfire.ro/propunere-casatorie-iasi-efecte-pirotehnice-si-magie-magicfire-moldova-2026/",
@@ -1013,39 +1034,39 @@
     {
       "page": "https://magicfire.ro/tendinte-artificii-2026-iasi-moldova/",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 5.8
+      "position": 6.2
     }
   ],
   "countries_28d": [
     {
       "country": "rou",
-      "clicks": 108,
-      "impressions": 1633,
-      "ctr": 0.0661,
+      "clicks": 109,
+      "impressions": 1679,
+      "ctr": 0.0649,
       "position": 5.1
     },
     {
       "country": "gbr",
       "clicks": 4,
-      "impressions": 28,
-      "ctr": 0.1429,
-      "position": 4.7
+      "impressions": 38,
+      "ctr": 0.1053,
+      "position": 4.6
     },
     {
       "country": "deu",
       "clicks": 3,
-      "impressions": 40,
-      "ctr": 0.075,
-      "position": 5.1
+      "impressions": 52,
+      "ctr": 0.0577,
+      "position": 7.1
     },
     {
       "country": "nld",
       "clicks": 2,
-      "impressions": 23,
-      "ctr": 0.087,
-      "position": 2.0
+      "impressions": 29,
+      "ctr": 0.069,
+      "position": 2.3
     },
     {
       "country": "che",
@@ -1059,28 +1080,28 @@
       "clicks": 1,
       "impressions": 31,
       "ctr": 0.0323,
-      "position": 4.5
+      "position": 4.6
     },
     {
       "country": "mda",
       "clicks": 1,
-      "impressions": 10,
-      "ctr": 0.1,
-      "position": 7.9
+      "impressions": 12,
+      "ctr": 0.0833,
+      "position": 6.8
     },
     {
       "country": "aut",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 4,
       "ctr": 0,
-      "position": 6.8
+      "position": 5.2
     },
     {
-      "country": "bra",
+      "country": "bel",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 44
+      "position": 9
     },
     {
       "country": "col",
@@ -1120,9 +1141,9 @@
     {
       "country": "grc",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
-      "position": 5
+      "position": 3.5
     },
     {
       "country": "hun",
@@ -1164,16 +1185,16 @@
     {
       "device": "MOBILE",
       "clicks": 108,
-      "impressions": 1570,
-      "ctr": 0.0688,
+      "impressions": 1614,
+      "ctr": 0.0669,
       "position": 5.0
     },
     {
       "device": "DESKTOP",
-      "clicks": 12,
-      "impressions": 264,
-      "ctr": 0.0455,
-      "position": 7.5
+      "clicks": 13,
+      "impressions": 295,
+      "ctr": 0.0441,
+      "position": 7.4
     },
     {
       "device": "TABLET",
@@ -1184,13 +1205,6 @@
     }
   ],
   "daily_28d": [
-    {
-      "date": "2026-07-13",
-      "clicks": 4,
-      "impressions": 54,
-      "ctr": 0.0741,
-      "position": 6.3
-    },
     {
       "date": "2026-07-14",
       "clicks": 3,
@@ -1372,15 +1386,22 @@
       "impressions": 84,
       "ctr": 0.0238,
       "position": 4.9
+    },
+    {
+      "date": "2026-08-09",
+      "clicks": 5,
+      "impressions": 129,
+      "ctr": 0.0388,
+      "position": 5.6
     }
   ],
   "query_page_28d": [
     {
       "query": "artificii iasi",
       "page": "https://magicfire.ro/",
-      "clicks": 18,
-      "impressions": 107,
-      "position": 2.9
+      "clicks": 17,
+      "impressions": 106,
+      "position": 2.8
     },
     {
       "query": "magicfire",
@@ -1393,15 +1414,15 @@
       "query": "artificii",
       "page": "https://magicfire.ro/",
       "clicks": 3,
-      "impressions": 35,
+      "impressions": 34,
       "position": 4.6
     },
     {
       "query": "artificii galati",
       "page": "https://magicfire.ro/artificii-galati/",
-      "clicks": 3,
-      "impressions": 30,
-      "position": 7.1
+      "clicks": 2,
+      "impressions": 29,
+      "position": 6.9
     },
     {
       "query": "artificii reci",
@@ -1421,15 +1442,15 @@
       "query": "artificii iasi",
       "page": "https://magicfire.ro/artificii-iasi/",
       "clicks": 1,
-      "impressions": 4,
-      "position": 14.2
+      "impressions": 5,
+      "position": 11.6
     },
     {
       "query": "artificii ieftine",
       "page": "https://magicfire.ro/",
       "clicks": 1,
-      "impressions": 4,
-      "position": 9.5
+      "impressions": 5,
+      "position": 9.8
     },
     {
       "query": "baterii artificii",
@@ -1442,7 +1463,7 @@
       "query": "magic fire",
       "page": "https://magicfire.ro/",
       "clicks": 1,
-      "impressions": 26,
+      "impressions": 27,
       "position": 1.8
     },
     {
@@ -1576,7 +1597,7 @@
       "page": "https://magicfire.ro/category/artificii-iasi-evenimente/",
       "clicks": 0,
       "impressions": 9,
-      "position": 12.1
+      "position": 12.7
     },
     {
       "query": "artificii interior",
@@ -1617,15 +1638,15 @@
       "query": "artificii nunta exterior pret",
       "page": "https://magicfire.ro/artificii-nunta-pret-2026-romania/",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "position": 10.2
     },
     {
       "query": "artificii nunta interior",
       "page": "https://magicfire.ro/artificii-nunta-pret-2026-romania/",
       "clicks": 0,
-      "impressions": 10,
-      "position": 8.2
+      "impressions": 11,
+      "position": 8.3
     },
     {
       "query": "artificii nunta pret",
@@ -1647,6 +1668,13 @@
       "clicks": 0,
       "impressions": 1,
       "position": 1
+    },
+    {
+      "query": "artificii petarde",
+      "page": "https://magicfire.ro/",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 6
     },
     {
       "query": "artificii petrecere",
@@ -1687,8 +1715,8 @@
       "query": "artificii shop",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 5,
-      "position": 3
+      "impressions": 6,
+      "position": 3.2
     },
     {
       "query": "artificii shop baterii",
@@ -1708,8 +1736,8 @@
       "query": "artificii sparkulare",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 4,
-      "position": 8.5
+      "impressions": 3,
+      "position": 8.3
     },
     {
       "query": "artificii tort",
@@ -1750,8 +1778,15 @@
       "query": "cat costa un foc de artificii la nunta",
       "page": "https://magicfire.ro/artificii-nunta-pret-2026-romania/",
       "clicks": 0,
-      "impressions": 11,
-      "position": 6.6
+      "impressions": 13,
+      "position": 7
+    },
+    {
+      "query": "cheap magic fire 25g",
+      "page": "https://magicfire.ro/shop/",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 31
     },
     {
       "query": "coloured fireworks",
@@ -1766,6 +1801,13 @@
       "clicks": 0,
       "impressions": 1,
       "position": 2
+    },
+    {
+      "query": "costuri",
+      "page": "https://magicfire.ro/artificii-nunta-pret-2026-romania/",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 1
     },
     {
       "query": "cât costă",
@@ -1801,13 +1843,6 @@
       "clicks": 0,
       "impressions": 1,
       "position": 4
-    },
-    {
-      "query": "fire works",
-      "page": "https://magicfire.ro/",
-      "clicks": 0,
-      "impressions": 1,
-      "position": 6
     },
     {
       "query": "firecracker",
@@ -1869,8 +1904,8 @@
       "query": "fireworks",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 38,
-      "position": 5.4
+      "impressions": 34,
+      "position": 5.0
     },
     {
       "query": "fireworks for cakes",
@@ -1885,6 +1920,13 @@
       "clicks": 0,
       "impressions": 1,
       "position": 2
+    },
+    {
+      "query": "fireworks shop bg3",
+      "page": "https://magicfire.ro/",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 13
     },
     {
       "query": "fireworkss",
@@ -1918,8 +1960,8 @@
       "query": "foc de artificii nunta pret",
       "page": "https://magicfire.ro/artificii-nunta-pret-2026-romania/",
       "clicks": 0,
-      "impressions": 7,
-      "position": 8.7
+      "impressions": 8,
+      "position": 8.8
     },
     {
       "query": "focuri de artificii",
@@ -1967,8 +2009,8 @@
       "query": "fumigene gender reveal",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 7,
-      "position": 6.3
+      "impressions": 6,
+      "position": 7.2
     },
     {
       "query": "fumigene iasi",
@@ -2030,8 +2072,8 @@
       "query": "magazin artificii",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 1,
-      "position": 1
+      "impressions": 2,
+      "position": 1.5
     },
     {
       "query": "magazin de artificii",
@@ -2135,7 +2177,7 @@
       "query": "petarde",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 39,
+      "impressions": 41,
       "position": 6.2
     },
     {
