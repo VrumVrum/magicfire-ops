@@ -1,25 +1,25 @@
 {
   "site": "https://magicfire.ro/",
-  "generated": "2026-08-14",
+  "generated": "2026-08-15",
   "totals_28d": {
-    "clicks": 131,
-    "impressions": 2059,
-    "ctr": 0.06362311801845556,
-    "position": 5.422535211267606
+    "clicks": 130,
+    "impressions": 2024,
+    "ctr": 0.06422924901185771,
+    "position": 5.450592885375494
   },
   "totals_prev_28d": {
-    "clicks": 100,
-    "impressions": 1231,
-    "ctr": 0.08123476848090982,
-    "position": 5.554833468724614
+    "clicks": 98,
+    "impressions": 1223,
+    "ctr": 0.08013082583810302,
+    "position": 5.488961569910058
   },
   "queries_28d": [
     {
       "query": "artificii iasi",
-      "clicks": 19,
-      "impressions": 112,
-      "ctr": 0.1696,
-      "position": 2.8
+      "clicks": 18,
+      "impressions": 103,
+      "ctr": 0.1748,
+      "position": 2.9
     },
     {
       "query": "artificii",
@@ -493,9 +493,9 @@
     {
       "query": "fireworks",
       "clicks": 0,
-      "impressions": 34,
+      "impressions": 31,
       "ctr": 0,
-      "position": 5.4
+      "position": 5.5
     },
     {
       "query": "fireworks delivery",
@@ -591,9 +591,9 @@
     {
       "query": "fumigene",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 3,
       "ctr": 0,
-      "position": 6.2
+      "position": 7.3
     },
     {
       "query": "fumigene colorate iasi",
@@ -605,14 +605,14 @@
     {
       "query": "fumigene gender reveal",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 2,
       "ctr": 0,
-      "position": 6.3
+      "position": 4.5
     },
     {
       "query": "fumigene iasi",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 10,
       "ctr": 0,
       "position": 3.9
     },
@@ -855,13 +855,6 @@
       "position": 1
     },
     {
-      "query": "yellow roctail fireworks palia",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 6
-    },
-    {
       "query": "în iasi",
       "clicks": 0,
       "impressions": 1,
@@ -872,10 +865,10 @@
   "pages_28d": [
     {
       "page": "https://magicfire.ro/",
-      "clicks": 96,
-      "impressions": 1188,
-      "ctr": 0.0808,
-      "position": 4.7
+      "clicks": 95,
+      "impressions": 1157,
+      "ctr": 0.0821,
+      "position": 4.8
     },
     {
       "page": "https://magicfire.ro/artificii-nunta-pret-2026-romania/",
@@ -894,23 +887,23 @@
     {
       "page": "https://magicfire.ro/category/artificii-iasi-evenimente/",
       "clicks": 4,
-      "impressions": 99,
-      "ctr": 0.0404,
+      "impressions": 98,
+      "ctr": 0.0408,
       "position": 7.1
     },
     {
       "page": "https://magicfire.ro/shop/",
       "clicks": 4,
-      "impressions": 70,
-      "ctr": 0.0571,
+      "impressions": 69,
+      "ctr": 0.058,
       "position": 8.1
     },
     {
       "page": "https://magicfire.ro/artificii-iasi/",
       "clicks": 2,
-      "impressions": 102,
-      "ctr": 0.0196,
-      "position": 5.7
+      "impressions": 100,
+      "ctr": 0.02,
+      "position": 5.6
     },
     {
       "page": "https://magicfire.ro/artificii-reci-fantani-scantei-t1/",
@@ -950,9 +943,9 @@
     {
       "page": "https://magicfire.ro/artificii-corporate-evenimente-firma/",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 7
+      "position": 11
     },
     {
       "page": "https://magicfire.ro/artificii-iasi-firma-locala/",
@@ -1034,7 +1027,7 @@
     {
       "page": "https://magicfire.ro/preturi/",
       "clicks": 0,
-      "impressions": 97,
+      "impressions": 96,
       "ctr": 0,
       "position": 5.8
     },
@@ -1070,9 +1063,9 @@
   "countries_28d": [
     {
       "country": "rou",
-      "clicks": 117,
-      "impressions": 1787,
-      "ctr": 0.0655,
+      "clicks": 116,
+      "impressions": 1756,
+      "ctr": 0.0661,
       "position": 5.2
     },
     {
@@ -1113,8 +1106,8 @@
     {
       "country": "nld",
       "clicks": 1,
-      "impressions": 32,
-      "ctr": 0.0312,
+      "impressions": 31,
+      "ctr": 0.0323,
       "position": 2.3
     },
     {
@@ -1197,32 +1190,32 @@
     {
       "country": "grc",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 3,
       "ctr": 0,
-      "position": 3.5
+      "position": 4.3
     },
     {
-      "country": "hun",
+      "country": "ind",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 5
+      "position": 6
     }
   ],
   "devices_28d": [
     {
       "device": "MOBILE",
-      "clicks": 112,
-      "impressions": 1691,
-      "ctr": 0.0662,
+      "clicks": 111,
+      "impressions": 1663,
+      "ctr": 0.0667,
       "position": 5.0
     },
     {
       "device": "DESKTOP",
       "clicks": 19,
-      "impressions": 364,
-      "ctr": 0.0522,
-      "position": 7.4
+      "impressions": 357,
+      "ctr": 0.0532,
+      "position": 7.5
     },
     {
       "device": "TABLET",
@@ -1233,13 +1226,6 @@
     }
   ],
   "daily_28d": [
-    {
-      "date": "2026-07-17",
-      "clicks": 1,
-      "impressions": 35,
-      "ctr": 0.0286,
-      "position": 3.8
-    },
     {
       "date": "2026-07-18",
       "clicks": 1,
@@ -1427,9 +1413,9 @@
     {
       "query": "artificii iasi",
       "page": "https://magicfire.ro/",
-      "clicks": 18,
-      "impressions": 112,
-      "position": 2.8
+      "clicks": 17,
+      "impressions": 103,
+      "position": 2.9
     },
     {
       "query": "artificii",
@@ -1932,8 +1918,8 @@
       "query": "fireworks",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 34,
-      "position": 5.4
+      "impressions": 31,
+      "position": 5.5
     },
     {
       "query": "fireworks delivery",
@@ -2030,8 +2016,8 @@
       "query": "fumigene",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 4,
-      "position": 6.2
+      "impressions": 3,
+      "position": 7.3
     },
     {
       "query": "fumigene colorate iasi",
@@ -2044,14 +2030,14 @@
       "query": "fumigene gender reveal",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 3,
-      "position": 6.3
+      "impressions": 2,
+      "position": 4.5
     },
     {
       "query": "fumigene iasi",
       "page": "https://magicfire.ro/",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 10,
       "position": 3.9
     },
     {
@@ -2340,13 +2326,6 @@
       "clicks": 0,
       "impressions": 1,
       "position": 5
-    },
-    {
-      "query": "yellow roctail fireworks palia",
-      "page": "https://magicfire.ro/",
-      "clicks": 0,
-      "impressions": 1,
-      "position": 6
     },
     {
       "query": "în iasi",
