@@ -142,3 +142,48 @@ Growth continues but position improvement is the smallest of the four pulls so f
 **Site health (`data/site.json`, generated 2026-08-10):** 10/12 checks green, unchanged. `/servicii` and `/despre-noi` still 404 — same stale flag, no new evidence, not re-escalated.
 
 Note: this session's outbound network policy still blocks direct fetches to magicfire.ro (WebFetch returned `EGRESS_BLOCKED` on both `/artificii-nunta-pret-2026-romania/` and `/preturi/`). No live-page verification was possible from this session — flagged in `ledger/actions.md`.
+
+## 2026-08-17 — fifth scored pull (28d vs prior 28d)
+
+Source: `data/gsc.json`, generated 2026-08-17.
+
+| Metric | Last 28d | Prior 28d | Δ |
+|---|---|---|---|
+| Clicks | 136 | 102 | **+34 (+33.3%)** |
+| Impressions | 2,215 | 1,289 | **+926 (+71.8%)** |
+| CTR | 6.14% | 7.91% | **-1.77pp** |
+| Avg. position | 5.56 | 5.38 | **-0.18 (worse)** |
+
+Impressions grew the fastest of any pull so far (+71.8%, previous best was +69.7%). Clicks kept growing too (+33.3%), but CTR fell for the third straight cycle (8.26%→6.54%→6.14%, or looking at this file's own prev/current framing: -1.72pp then -1.77pp) and — new this pull — **average position got measurably worse, not better, for the first time in five pulls** (5.38→5.56). Romania is still the large majority of traffic (85.7% of impressions, 88.2% of clicks), so this cannot be waved off as foreign-query dilution, same conclusion as last cycle. Saying the honest number: three consecutive CTR declines plus the first position regression is a real pattern, and this pull surfaces a concrete, page-level explanation for at least part of it (see below) rather than an unexplained site-wide drift.
+
+**Device split (28d):** Mobile 117 clicks / 1,773 impr (80.1% of impressions, CTR 6.60%, pos 5.0), Desktop 19/438 (19.8%, CTR 4.34%, pos 7.9), Tablet 0/4 (pos 3.5). Mobile's share of impressions dropped from ~85-86% in every prior pull to 80.1% this pull — desktop's share nearly doubled (438 impr vs 264 last pull). Mobile is still clearly the dominant, better-converting channel (CTR 6.60% vs desktop 4.34%), so mobile-first remains the correct lens, but this shift is worth watching, not acted on without more evidence.
+
+**Top queries by clicks (28d):**
+| Query | Clicks | Impr | Position |
+|---|---|---|---|
+| artificii iasi | 17 | 105 | 5.1 |
+| artificii galati | 3 | 32 | 6.8 |
+| magicfire (brand) | 3 | 8 | 1.0 |
+| artificii | 2 | 35 | 4.5 |
+| artificii reci | 2 | 23 | 7.6 |
+| cat costa artificiile la nunta | 2 | 19 | 5.7 |
+
+**Top pages by clicks (28d):** homepage 100/1,215 (pos 4.9) · `/artificii-nunta-pret-2026-romania/` 15/567 (pos 6.1) · `/artificii-galati/` 9/123 (pos 6.0) · `/category/artificii-iasi-evenimente/` 4/104 (pos 7.4) · `/shop/` 4/66 (pos 8.3) · `/artificii-iasi/` 2/112 (pos 5.8) · `/artificii-reci-fantani-scantei-t1/` 2/36 (pos 7.4).
+
+**New signal this pull — "artificii iasi" cannibalization has gotten measurably worse, with query-level page data confirming it for the first time.** This is the site's single highest-value query (17 clicks/28d — more than 5× the next query). Its blended position (5.1) is the worst it has ever been; per-page breakdown from `query_page_28d` shows why:
+- Homepage: position **4.4**, 103 impr, 16 clicks — down from a stable 2.9-3.0 across all four prior pulls (07-30, 08-03, 08-06, 08-10). First real movement in five pulls, and it moved the wrong direction.
+- `/artificii-iasi/` (the page whose own URL slug *is* this exact query): position **17.1**, 7 impr, 1 click — badly suppressed on the one query it should own.
+- `/category/artificii-iasi-evenimente/`: position **19.6**, 9 impr, 0 clicks — worse than the 12.1 already flagged as a cannibalization signal in the 2026-08-06 pull.
+Three internal pages are actively splitting relevance signal for the site's most important commercial term, and the page best-positioned to win it (the URL literally named `/artificii-iasi/`) is the most suppressed of the three. This has been carried forward as a "DEFERRED, no new evidence" item for five straight cycles (`ledger/opportunities.md`) — this pull has fresh, concrete, worsening evidence. See Action #5 in `ledger/actions.md`.
+
+**Action #1 status check** (`/artificii-reci-fantani-scantei-t1/`, verify date 2026-08-27 — not due, 10 days out): 36 impr / 2 clicks / pos 7.4 / CTR 5.56% — impressions ticked up from 29, clicks unchanged, position slightly better than 7.7. Still not due.
+
+**Action #2 status check** (`/preturi/`, verify date 2026-09-14 — not due, 28 days out): 87 impr / 0 clicks / pos 5.4 — impressions down from 103, still 0 clicks for a third straight pull. Position slightly better (5.4 vs 5.8).
+
+**Action #3 status check** (`/category/artificii-iasi-evenimente/`, verify date 2026-09-21 — not due, 35 days out): 104 impr / 4 clicks / 3.85% CTR / pos 7.4 — a small uptick in impressions and clicks from 90/3/3.33%, but position slipped slightly (7.4 vs 6.9). The cannibalization angle this action already partially addresses (its proposed title de-emphasizes the exact "artificii iasi" phrase) is now confirmed worse at the query level — see the new signal above.
+
+**Action #4 status check** (`/artificii-nunta-pret-2026-romania/`, verify date 2026-09-28 — not due, 42 days out): 567 impr / 15 clicks / pos 6.1 / CTR 2.65% — impressions nearly doubled again (311→567), the **fifth consecutive cycle of growth** on this exact page (144→148→185→311→567). Clicks grew too (9→15) but CTR stayed flat and low (2.89%→2.65%), consistent with the snippet-bottleneck read the pending fix targets. Still not due for scoring.
+
+**Site health (`data/site.json`, generated 2026-08-17):** 10/12 checks green, unchanged. `/servicii` and `/despre-noi` still 404 — same stale flag, five cycles running, no new evidence.
+
+Note: this session's outbound network policy still blocks direct fetches to magicfire.ro (WebFetch returned `EGRESS_BLOCKED` on `/artificii-iasi/` and `/category/artificii-iasi-evenimente/`). No live-page verification was possible from this session — flagged in `ledger/actions.md`.
