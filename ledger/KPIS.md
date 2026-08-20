@@ -187,3 +187,47 @@ Three internal pages are actively splitting relevance signal for the site's most
 **Site health (`data/site.json`, generated 2026-08-17):** 10/12 checks green, unchanged. `/servicii` and `/despre-noi` still 404 — same stale flag, five cycles running, no new evidence.
 
 Note: this session's outbound network policy still blocks direct fetches to magicfire.ro (WebFetch returned `EGRESS_BLOCKED` on `/artificii-iasi/` and `/category/artificii-iasi-evenimente/`). No live-page verification was possible from this session — flagged in `ledger/actions.md`.
+
+## 2026-08-20 — sixth scored pull (28d vs prior 28d)
+
+Source: `data/gsc.json`, generated 2026-08-20.
+
+| Metric | Last 28d | Prior 28d | Δ |
+|---|---|---|---|
+| Clicks | 120 | 115 | **+5 (+4.3%)** |
+| Impressions | 2,161 | 1,494 | **+667 (+44.6%)** |
+| CTR | 5.55% | 7.70% | **-2.14pp** |
+| Avg. position | 5.69 | 5.17 | **-0.52 (worse)** |
+
+Saying the honest number: this is the weakest cycle of the six pulls on every quality metric at once. Clicks growth has essentially stalled — +4.3%, far below every prior cycle (+25% to +80.5%) — while impressions keep climbing fast (+44.6%). CTR fell for the **fourth straight cycle** and by the largest margin yet (-2.14pp, vs -1.72pp to -1.89pp the three cycles before). Average position got **worse for the second straight cycle**, and nearly 3× worse than the first regression (-0.52 vs -0.18 on 2026-08-17). Romania is still the large majority of traffic (108/120 clicks = 90%, 1,829/2,161 impressions = 84.6%), so this cannot be waved off as foreign-query dilution — same conclusion as the last two cycles, now with a third data point. `daily_28d` confirms this is a real within-window trend, not a comparison artifact: impressions rose from ~50-90/day in late July to 100-137/day in mid-August while clicks stayed flat/noisy (2-8/day) and daily position got visibly noisier and worse in the most recent days (up to 8.1 on 08-14, vs a tight 4.1-5.3 band in late July).
+
+**Device split (28d):** Mobile 107 clicks / 1,724 impr (79.8% of impressions, CTR 6.21%, pos 5.1), Desktop 13/434 (20.1%, CTR 3.0%, pos 7.9), Tablet 0/3. Mobile's impression share held at ~80% for a second straight pull (was 80.1% on 2026-08-17, down from 85-86% in every pull before that) — this is now a two-cycle pattern, not a single data point, though mobile remains clearly the better-converting channel (CTR 6.21% vs desktop 3.0%) so mobile-first remains the correct lens.
+
+**Top queries by clicks (28d):**
+| Query | Clicks | Impr | Position |
+|---|---|---|---|
+| artificii iasi | 15 | 88 | 5.5 |
+| magicfire (brand, one word) | 4 | 9 | 1.0 |
+| artificii galati | 3 | 29 | 6.8 |
+| cat costa artificiile la nunta | 2 | 23 | 5.9 |
+| artificii | 1 | 31 | 4.5 |
+| artificii ieftine | 1 | 5 | 9.8 |
+| artificii nunta | 1 | 13 | 7.5 |
+
+**New anomaly this pull — "magic fire" (two-word brand query): 0 clicks on 29 impressions at position 1.4.** Every prior pull had this exact query converting normally (3-4 clicks on 25-30 impressions, ~14-16% CTR) at the same top-of-page-1 position. A branded query at position 1 getting zero clicks in 28 days is unusual — branded searchers overwhelmingly click through. Sample is small (29 impressions) so this could be noise, and there's no page-level fix to propose for a query-only anomaly. Flagged as a watch item, not actioned — would need a second cycle showing the same pattern, or a way to inspect the live SERP snippet (blocked from this session), before treating it as a real signal.
+
+**Top pages by clicks (28d):** homepage 86/1,131 (pos 5.0) · `/artificii-nunta-pret-2026-romania/` 16/625 (pos 6.3) · `/artificii-galati/` 8/123 (pos 6.0) · `/category/artificii-iasi-evenimente/` 4/93 (pos 7.1) · `/shop/` 4/59 (pos 8.6) · `/artificii-iasi/` 1/106 (pos 6.5) · `/pirotehnician-autorizat-romania/` 1/62 (pos 6.1, CTR 1.6% — real gap, but this page makes an authorization claim in its own URL/topic, which CLAUDE.md §7 owner-gates; not proposed as an action without owner sign-off on the wording) · `/product-category/engros/` 1/19 (pos 12).
+
+**Action #1 status check** (`/artificii-reci-fantani-scantei-t1/`, verify date 2026-08-27 — 7 days out, close but not due): 11 impr / 0 clicks / pos 6.2 — both impressions and clicks moved down from last pull (36 impr / 2 clicks / pos 7.4); at this page's very low volume (single digits to low teens of impressions/28d) this reads as noise around a near-zero baseline, not a real signal either way. Will score honestly at the 08-27 verify date regardless of which way it leans by then.
+
+**Action #2 status check** (`/preturi/`, verify date 2026-09-14 — 25 days out): 83 impr / 0 clicks / pos 5.2 — **fourth consecutive pull with zero clicks** (107→103→87→83 impressions across the four pulls, clicks 1→0→0→0→0 including the 2026-08-03 baseline). Position has held steady in the low-to-mid 5s throughout. The gap this action targets keeps existing unchanged while the fix sits unapplied.
+
+**Action #3 status check** (`/category/artificii-iasi-evenimente/`, verify date 2026-09-21 — 32 days out): 93 impr / 4 clicks / 4.30% CTR / pos 7.1 — roughly flat vs. last pull (104 impr / 4 clicks / 3.85% / pos 7.4). The cannibalization query-level check: "artificii iasi" on this page is at position 19.5 (was 19.6) — unchanged, still badly suppressed.
+
+**Action #4 status check** (`/artificii-nunta-pret-2026-romania/`, verify date 2026-09-28 — 39 days out): 625 impr / 16 clicks / pos 6.3 / CTR 2.56% — impressions grew again (567→625), the **sixth consecutive cycle of growth** on this exact page (144→148→185→311→567→625). Clicks grew too (15→16) but CTR stayed flat and low (2.65%→2.56%), still consistent with the snippet-bottleneck read the pending fix targets.
+
+**Action #5 status check** (`/artificii-iasi/` cannibalization fix, verify date 2026-09-14 — 25 days out): the regression this action was written to address **kept getting worse in the three days since it was proposed, with the fix still unapplied.** Query-level breakdown for "artificii iasi" this pull: homepage position **4.7** (was 4.4 last pull, 2.9-3.0 stable for the four pulls before that), `/artificii-iasi/` itself at position **17.7** (was 17.1), `/category/artificii-iasi-evenimente/` at position 19.5 (was 19.6, essentially flat). Blended query position 5.5 (was 5.1). This is now two straight pulls of the homepage losing ground on the site's single highest-value query (17→15 clicks/28d) while nothing has changed on the live site to explain it other than the ongoing cannibalization the pending fix targets.
+
+**Site health (`data/site.json`, generated 2026-08-20):** 11/12 checks green — up from 10/12. **`/servicii` now returns HTTP 200**, resolving a flag carried since 2026-07-30 across six pulls (no fix was applied by this routine — WordPress write access still isn't wired — so this appears to be a change made outside this routine, or the URL was never actually broken the way the original health-check assumption suggested). `/despre-noi` still returns HTTP 404, unchanged. Phone `tel:+40746883228` present (7×), tappable, above the fold on mobile; contact form present; no JS errors; no mobile overflow.
+
+Note: this session's outbound network policy still blocks direct fetches to magicfire.ro. No live-page verification was possible from this session — flagged in `ledger/actions.md`.

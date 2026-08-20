@@ -283,3 +283,48 @@ Notes on the copy: no fabricated numbers, review counts, or authorization claims
 - No separate seasonal-spike action taken: wedding season has ~6 weeks left and the Dec 31 prep window doesn't open until ~2026-10-22 (~9 weeks out). Action #5 targets a year-round core term, so it isn't competing with a more time-sensitive seasonal pick this cycle.
 
 **Needs the owner:** apply Action #5 in wp-admin (and Actions #1-#4 if not already applied); confirm current `/artificii-iasi/` title/meta before overwriting it, per above; confirm `/artificii-galati/` scope and `/servicii`/`/despre-noi` URL expectations (carried forward, unresolved since 2026-07-30, now five cycles running).
+
+---
+
+## 2026-08-20 (Thursday) — no new numbered action; escalation
+
+**Status:** No new title/meta proposal this cycle. Actions #1-#5 (all proposed, none applied) remain the complete backlog. This cycle's highest-value move is escalating that backlog, with fresh evidence it now has a measurable cost — not proposing a 6th unapplied item on top of five.
+
+**Why no new action, per STEP 2:** every position-4-15 gap and local-intent candidate visible in `data/gsc.json` this pull is either (a) already covered by an open action (`/preturi/`, `/category/artificii-iasi-evenimente/`, `/artificii-nunta-pret-2026-romania/`, `/artificii-iasi/`), (b) previously rejected/deferred with unchanged reasoning ("petarde" — shop intent, still 0 clicks; `/artificii-galati/` — scope question; foreign-language queries), or (c) owner-gated by §7 before it can even be drafted: `/pirotehnician-autorizat-romania/` has a real CTR gap (62 impr, 1 click, 1.6% CTR, pos 6.1) but its entire topic is an authorization claim, which CLAUDE.md explicitly reserves for the owner — proposing wording there without sign-off would risk exactly the "false claim = legal problem" failure mode §1/§7 exist to prevent. No fabricated opportunity was manufactured to fill the "one move" slot this cycle.
+
+**The escalation, with evidence (`ledger/KPIS.md` 2026-08-20 pull):**
+- WordPress write access has been requested every cycle since 2026-07-30 — this is the **seventh** cycle running with zero of the five proposed fixes applied.
+- In that time, site-wide CTR has fallen for **four consecutive cycles**, this cycle's drop (-2.14pp) the steepest yet; average position has now **worsened for two consecutive cycles**, the second regression (-0.52) nearly 3× the first (-0.18); clicks growth has stalled to +4.3% this cycle, the weakest of six pulls by a wide margin, even as impressions keep climbing (+44.6%).
+- The clearest single thread: "artificii iasi" — the site's #1 query by clicks — is the exact term Action #5 (proposed 2026-08-17, unapplied) targets. In the three days since it was proposed, the regression it describes **got worse, not better**: homepage position on this query 4.4→4.7, blended query position 5.1→5.5, clicks on the query 17→15. Nothing on the live site has changed to explain this other than the cannibalization Action #5 already diagnosed — the fix sits ready and unapplied while the problem it targets compounds.
+- This is not proof that applying the backlog would reverse the trend — no live-page change has been tested yet, so causation isn't established either way. But five reversible, evidence-based, zero-cost fixes sitting unapplied for up to seven weeks, on a site now showing four straight cycles of CTR decline and its highest-value query actively losing ground, is itself the highest-value thing to flag this cycle.
+
+**Needs the owner (escalated, not new):** wire WordPress REST API write access (Application Password) so this routine can apply Actions #1-#5 itself, or apply all five manually in wp-admin this week — they are implementation-ready, unchanged, and listed in full above (dates 2026-07-30, 08-03, 08-06, 08-10, 08-17). Also unresolved, carried forward six-plus cycles: confirm `/artificii-galati/` scope (Galați is outside the Iași+județ area CLAUDE.md defines) and confirm `/despre-noi` — still HTTP 404 — is expected (note: `/servicii`, flagged alongside it since 2026-07-30, now returns HTTP 200 on its own, see KPIS.md).
+
+---
+
+### Cycle report — 2026-08-20
+
+**What the numbers say:** Clicks +4.3% (120 vs 115) and impressions +44.6% (2,161 vs 1,494) over the trailing 28d vs. prior 28d — the weakest clicks growth of any of the six pulls to date, against continued fast impression growth. CTR fell for the fourth straight cycle, -2.14pp (7.70%→5.55%), the steepest single-cycle drop yet. Average position worsened for the second straight cycle, -0.52 (5.17→5.69), nearly three times the first regression (-0.18 on 2026-08-17). Romania remains ~85-90% of traffic, ruling out foreign-query dilution as the explanation for the third pull running. `daily_28d` confirms this is a real trend inside the 28-day window, not a comparison artifact.
+
+**Recommended action:** no new numbered action — escalate the WordPress-access blocker (see above). Five implementation-ready, zero-cost fixes (Actions #1-#5) remain unapplied after up to seven weeks, and this cycle's data shows the cost of that delay concretely for the first time: the site's top query is actively regressing while its fix sits waiting.
+
+**Action #1 scoring:** not due — verify date 2026-08-27 (7 days out). Status check in `ledger/KPIS.md`: 11 impr / 0 clicks / pos 6.2 — both metrics down from last pull, but at this page's very low volume this reads as noise, not signal.
+
+**Action #2 scoring:** not due — verify date 2026-09-14 (25 days out). Status check: 83 impr / 0 clicks / pos 5.2 — fourth straight pull with zero clicks.
+
+**Action #3 scoring:** not due — verify date 2026-09-21 (32 days out). Status check: 93 impr / 4 clicks / 4.30% CTR / pos 7.1 — roughly flat. Cannibalization check: "artificii iasi" on this page still at pos 19.5, unchanged.
+
+**Action #4 scoring:** not due — verify date 2026-09-28 (39 days out). Status check: 625 impr / 16 clicks / pos 6.3 / CTR 2.56% — sixth straight cycle of impression growth, CTR still flat and low.
+
+**Action #5 scoring:** not due — verify date 2026-09-14 (25 days out). Status check: the regression it targets worsened further — homepage position on "artificii iasi" 4.4→4.7, blended query position 5.1→5.5, query clicks 17→15 — while the fix remains unapplied.
+
+**Rejected/deferred this cycle** (full detail in `ledger/opportunities.md`):
+- `/pirotehnician-autorizat-romania/` CTR gap (62 impr, 1 click, 1.6% CTR, pos 6.1) — real gap, position in the fixable 4-15 band, but the page's entire topic is an authorization claim; owner-gated by §7, not drafted without sign-off.
+- "artificii nunta" cannibalization across homepage / `/artificii-nunta-pret-2026-romania/` / `/artificii-nunta-iasi-ghid-locatii-tendinte-2026/` (carried forward, 7th cycle) — no fresh evidence this pull distinct from the "artificii iasi" issue already actioned.
+- `/artificii-galati/` scope question (carried forward, 6th cycle) — unchanged, still awaiting owner confirmation. `/despre-noi` 404 also carried forward; `/servicii` (previously flagged alongside it) now resolved to HTTP 200 on its own.
+- "petarde" 0% CTR (carried forward) — unchanged reasoning, shop/self-serve intent not call conversion.
+- "magic fire" (two-word brand query) — 0 clicks on 29 impressions at position 1.4, a break from every prior pull's normal branded CTR (14-16%). Flagged as a watch item — small sample, no page-level fix available for a query-only signal, needs a second cycle or live-SERP visibility (blocked from this session) before acting.
+- Mobile impression share held at ~80% for a second straight pull (down from 85-86% baseline) — now a two-cycle pattern, still not acted on, mobile remains the better-converting channel regardless.
+- No seasonal-spike action taken: wedding season (May-Sep) has ~6 weeks left, and the Dec 31 prep window doesn't open until ~2026-10-22 (~9 weeks out). No pick was time-critical enough to override the escalation above this cycle.
+
+**Needs the owner:** wire WordPress write access or apply Actions #1-#5 manually (escalated above — now the top-priority ask, with evidence the delay has a measurable cost); confirm `/artificii-galati/` scope; confirm `/despre-noi` 404 is expected (carried forward, unresolved since 2026-07-30, now six-plus cycles running).
